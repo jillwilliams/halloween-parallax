@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halloween Parallax</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rancho&family=Caveat&family=Creepster&family=Quintessential&family=Fruktur&family=Rye&family=UnifrakturMaguntia&family=Kranky&family=Nosifer&family=Noto+Sans+Rubic&family=Noto+Color+Emoji&family=Dancing+Script&family=Fuggles&family=Indie+Flower&family=Kalam&family=Montserrat:wght@100&family=Permanent+Marker&family=Poppins&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- keep this -->
+        <script src="https://kit.fontawesome.com/9f71dab2a2.js" crossorigin="anonymous"></script>
+        <!-- keep this -->
+        <link rel="stylesheet" href="./styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section>
+            <img src="images/bg1.jpg" id="bg">
+            <img src="images/bats.png" id="bats">
+            <img src="images/castle.png" id="castle">
+            <img src="images/img.png" id="img">
+            <img src="images/wolf.png" id="wolf">
+        </section>
+        <div class="sec">
+            <div class="content">
+                <h2>Happy Halloween</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aut consectetur tempora aperiam, ab fuga autem iusto blanditiis alias unde rerum, ipsa maiores tenetur sed fugiat quae quia quis quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam error rerum eos similique mollitia unde accusantium quia blanditiis ipsum a perferendis, asperiores praesentium adipisci pariatur, suscipit voluptatum. Hic, sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed ipsam, non distinctio nemo ut, sit obcaecati dolore quaerat quo tempora laborum? Ut labore atque cum id at debitis quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae labore quisquam obcaecati blanditiis beatae odit commodi, eos tempora sit laborum sequi ea error dolor facilis ab modi officia quam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis aliquam quisquam mollitia sed tenetur corrupti nesciunt, eum earum facere quod quis corporis doloribus excepturi provident dolorem laboriosam a tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maxime, delectus corporis consequuntur esse aspernatur unde sint. Atque ad error, odio harum consectetur optio deserunt minima fugiat molestias vitae iusto.</p>
+            </div>        
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.to("#img",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                x : 1500,
+                y : 500,
+            })
+
+            gsap.from("#wolf",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                x : 200,
+            })
+
+            gsap.from("#castle",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                x : -100,
+            })
+
+            gsap.to("#bats",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                scale : 1.5,
+            })
+        </script>
+    </body>
+</html>
